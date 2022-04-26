@@ -1,0 +1,250 @@
+@media (max-width:1744px) {
+    .container {
+        width: 1360px;
+    }
+    
+    .about {
+        .astronaut_image {
+            left: 597px;
+            top: 532px;
+        }
+    }
+
+    .stack { 
+        .stack_description {
+            .planet_image {
+                width: 749px; 
+                height: 727px;
+            }
+        }
+    }
+
+    .rocket_image {
+        top: 1665px;
+        left: -121px;
+        height: 2519px;
+    }
+}
+
+@media (max-width:1466px) {
+    .container {
+        width: 1060px;
+    }
+
+    .about {
+        padding-top: 110px;
+        p {
+            width: 60%;
+        }
+        .astronaut_image {
+            left: 470px;
+            top: 450px;
+            width: 177px;
+            height: 190px;
+        }
+    }
+
+    .rocket_image {
+        top: 1469px;
+        left: -121px;
+        height: 1981px;
+    }
+
+    .stack { 
+        .stack_description {
+            .stack__image {
+                width: 463px;
+                height: 492px;
+            }
+            .stack__logo_image {
+                margin-top: 100px;
+            }
+        }
+    }
+}
+
+@media (max-width:1306px) {
+    .container {
+        width: 860px;
+    }
+
+    .about {
+        padding-top: 0;
+        margin-top: 300px;
+        p {
+            margin: 0;
+            width: 100%;
+        }
+        .astronaut_image {
+            left: 366px;
+            top: 317px;
+        }
+    }
+}
+
+@media (max-width:1202px) {
+    .stack { 
+        .stack_description {
+            .planet_image {
+                width: 449px; 
+                height: 427px;
+            }
+            .stack__image {
+                width: 323px;
+                height: 352px;
+            }
+        }
+    }
+
+    footer {
+        #contacts {
+            width: 45%;
+        }
+    } 
+}
+
+@media (max-width:936px) {
+    .container {
+        width: 560px;
+    }
+
+    .rocket_image {
+        display: none;
+    }
+
+    .about {
+        background: transparent;
+        height: 980px;
+    }
+
+    .stack { 
+        .stack_description {
+            width: 100%;
+        }
+    }
+
+    footer {
+        #contacts {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width:664px) {
+    .offer {
+        .offer__text {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:614px) {
+    .container {
+        width: 360px;
+    }
+
+    .mars_image {
+        width: 666px;
+        height: 927px;
+    }
+
+    .offer {
+        .offer__text {
+            p {
+                margin: 45px 0 95px;
+            }
+        }
+    }
+
+    .about {
+        p {
+            font-size: 26px;
+        }
+        .astronaut_image {
+            left: 216px;
+        }
+    } 
+
+    .stack {
+        p {
+            font-size: 32px;
+        }
+    }
+
+    footer {
+        #contacts {
+            width: 100%;
+            p {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media (max-width:490px) {
+    .about {
+        .astronaut_image {
+            left: 164px;
+        }
+    } 
+
+    .stack { 
+        .stack_description {
+            .stack__image {
+                width: 263px;
+                height: 292px;
+            }
+            .planet_image {
+                width: 349px; 
+                height: 327px;
+            }
+            .line {
+                width: 310px;
+            }
+        }
+    }
+}
+
+@media (max-width:410px) {
+    .container {
+        width: 300px;
+    }
+
+    .offer {
+        .offer__text {
+            h1 {
+                font-size: 60px;
+            }
+            p {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .about {
+        margin-top: 214px;
+        .astronaut_image {
+            top: 437px;
+            width: 137px;
+            height: 150px;
+        }
+    }
+
+    .stack { 
+        margin-top: -210px;
+        p {
+            font-size: 26px;
+        }
+    }
+    
+    footer {
+        #contacts {
+            p {
+                font-size: 26px;
+            }
+            a {
+                font-size: 22px;
+            }
+        }
+    }
+}

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #211539;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow-x:hidden; 
+}
+
+.container {
+    width: 1680px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 65px;
+}
+
+.btn {
+    width: 160px;
+    height: 69px;
+    background: #FDEFFD;
+    border: 0;
+    border-radius: 13px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #2D2D2D;
+    text-decoration: none;
+        &:hover {
+            background: #FF3407;
+            box-shadow: 0px 0px 19.2586px rgba(0, 0, 0, 0.05);
+            backdrop-filter: blur(6.41952px);
+            color: white;
+        }
+}
+
+.mars_image {
+    background-image: url('../images/mars.png');
+    background-size: cover;
+    background-position: center;
+    width: 1224px;
+    height: 1276px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+@mixin text-style {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 57px;
+    color: white;
+}
+
+.offer {
+    margin-top: 173px;
+    .offer__text {
+        width: 600px;
+        h1 {
+            font-weight: 600;
+            font-size: 80px;
+            line-height: 90px;
+            color: white;
+        }
+        p {
+            @include text-style();
+            margin: 45px 0 195px;
+        }
+        .btn {
+            width: 295px;
+        }
+    }
+}
+
+.about {
+    padding-top: 205px;
+    background-image: url('../images/about_background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 1246px;
+    position: relative;
+    p {
+        width: 40%;
+        margin: 0 0 0 auto;
+        color: white;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 53px;
+        letter-spacing: 0.1em;
+    }
+    .astronaut_image {
+        position: absolute;
+        left: 760px;
+        top: 660px;
+        transition: transform .9s ease-in-out;
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+.rocket_image {
+    position: absolute;
+    top: 1870px;
+    left: -60px;
+    height: 2775px;
+}
+
+.stack {
+    width: 100%;
+    margin-top: -355px;
+    p {
+        @include text-style();
+        text-align: center;
+    }
+    .stack_description {
+        width: 50%;
+        margin: 0 0 0 auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .line {
+            width: 417px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.7);
+            margin-bottom: 60px;
+        }
+        .stack__logo_image {
+            margin-top: 240px;
+        }
+        .btn {
+            margin-top: 20px;
+        }
+        .planet_image {
+            width: 849px; 
+            height: 827px;
+        }
+    }
+}
+
+footer {
+    margin-bottom: 60px;
+    #contacts {
+        width: 35%;
+        margin: 0 0 0 auto;
+        p {
+            @include text-style();
+        }
+        .footer__icons {
+            margin-bottom: 20px;
+            a {
+                margin-right: 40px;
+            }
+        }
+        a {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 57px;
+            color: white;
+            text-decoration: none;
+        }
+        .footer__phone, .footer__mail {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            img {
+                height: 40px;
+                width: 40px;
+                margin-right: 10px;
+            }
+        }
+    }
+}

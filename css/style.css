@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #211539;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1680px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 65px;
+}
+
+.btn {
+  width: 160px;
+  height: 69px;
+  background: #FDEFFD;
+  border: 0;
+  border-radius: 13px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: #2D2D2D;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #FF3407;
+  -webkit-box-shadow: 0px 0px 19.2586px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 19.2586px rgba(0, 0, 0, 0.05);
+  -webkit-backdrop-filter: blur(6.41952px);
+          backdrop-filter: blur(6.41952px);
+  color: white;
+}
+
+.mars_image {
+  background-image: url("../images/mars.png");
+  background-size: cover;
+  background-position: center;
+  width: 1224px;
+  height: 1276px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.offer {
+  margin-top: 173px;
+}
+
+.offer .offer__text {
+  width: 600px;
+}
+
+.offer .offer__text h1 {
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 90px;
+  color: white;
+}
+
+.offer .offer__text p {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 57px;
+  color: white;
+  margin: 45px 0 195px;
+}
+
+.offer .offer__text .btn {
+  width: 295px;
+}
+
+.about {
+  padding-top: 205px;
+  background-image: url("../images/about_background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 1246px;
+  position: relative;
+}
+
+.about p {
+  width: 40%;
+  margin: 0 0 0 auto;
+  color: white;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: 0.1em;
+}
+
+.about .astronaut_image {
+  position: absolute;
+  left: 760px;
+  top: 660px;
+  -webkit-transition: -webkit-transform .9s ease-in-out;
+  transition: -webkit-transform .9s ease-in-out;
+  transition: transform .9s ease-in-out;
+  transition: transform .9s ease-in-out, -webkit-transform .9s ease-in-out;
+}
+
+.about .astronaut_image:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.rocket_image {
+  position: absolute;
+  top: 1870px;
+  left: -60px;
+  height: 2775px;
+}
+
+.stack {
+  width: 100%;
+  margin-top: -355px;
+}
+
+.stack p {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 57px;
+  color: white;
+  text-align: center;
+}
+
+.stack .stack_description {
+  width: 50%;
+  margin: 0 0 0 auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.stack .stack_description .line {
+  width: 417px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.7);
+  margin-bottom: 60px;
+}
+
+.stack .stack_description .stack__logo_image {
+  margin-top: 240px;
+}
+
+.stack .stack_description .btn {
+  margin-top: 20px;
+}
+
+.stack .stack_description .planet_image {
+  width: 849px;
+  height: 827px;
+}
+
+footer {
+  margin-bottom: 60px;
+}
+
+footer #contacts {
+  width: 35%;
+  margin: 0 0 0 auto;
+}
+
+footer #contacts p {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 57px;
+  color: white;
+}
+
+footer #contacts .footer__icons {
+  margin-bottom: 20px;
+}
+
+footer #contacts .footer__icons a {
+  margin-right: 40px;
+}
+
+footer #contacts a {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 57px;
+  color: white;
+  text-decoration: none;
+}
+
+footer #contacts .footer__phone, footer #contacts .footer__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+footer #contacts .footer__phone img, footer #contacts .footer__mail img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+@media (max-width: 1744px) {
+  .container {
+    width: 1360px;
+  }
+  .about .astronaut_image {
+    left: 597px;
+    top: 532px;
+  }
+  .stack .stack_description .planet_image {
+    width: 749px;
+    height: 727px;
+  }
+  .rocket_image {
+    top: 1665px;
+    left: -121px;
+    height: 2519px;
+  }
+}
+
+@media (max-width: 1466px) {
+  .container {
+    width: 1060px;
+  }
+  .about {
+    padding-top: 110px;
+  }
+  .about p {
+    width: 60%;
+  }
+  .about .astronaut_image {
+    left: 470px;
+    top: 450px;
+    width: 177px;
+    height: 190px;
+  }
+  .rocket_image {
+    top: 1469px;
+    left: -121px;
+    height: 1981px;
+  }
+  .stack .stack_description .stack__image {
+    width: 463px;
+    height: 492px;
+  }
+  .stack .stack_description .stack__logo_image {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 1306px) {
+  .container {
+    width: 860px;
+  }
+  .about {
+    padding-top: 0;
+    margin-top: 300px;
+  }
+  .about p {
+    margin: 0;
+    width: 100%;
+  }
+  .about .astronaut_image {
+    left: 366px;
+    top: 317px;
+  }
+}
+
+@media (max-width: 1202px) {
+  .stack .stack_description .planet_image {
+    width: 449px;
+    height: 427px;
+  }
+  .stack .stack_description .stack__image {
+    width: 323px;
+    height: 352px;
+  }
+  footer #contacts {
+    width: 45%;
+  }
+}
+
+@media (max-width: 936px) {
+  .container {
+    width: 560px;
+  }
+  .rocket_image {
+    display: none;
+  }
+  .about {
+    background: transparent;
+    height: 980px;
+  }
+  .stack .stack_description {
+    width: 100%;
+  }
+  footer #contacts {
+    width: 80%;
+  }
+}
+
+@media (max-width: 664px) {
+  .offer .offer__text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 614px) {
+  .container {
+    width: 360px;
+  }
+  .mars_image {
+    width: 666px;
+    height: 927px;
+  }
+  .offer .offer__text p {
+    margin: 45px 0 95px;
+  }
+  .about p {
+    font-size: 26px;
+  }
+  .about .astronaut_image {
+    left: 216px;
+  }
+  .stack p {
+    font-size: 32px;
+  }
+  footer #contacts {
+    width: 100%;
+  }
+  footer #contacts p {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 490px) {
+  .about .astronaut_image {
+    left: 164px;
+  }
+  .stack .stack_description .stack__image {
+    width: 263px;
+    height: 292px;
+  }
+  .stack .stack_description .planet_image {
+    width: 349px;
+    height: 327px;
+  }
+  .stack .stack_description .line {
+    width: 310px;
+  }
+}
+
+@media (max-width: 410px) {
+  .container {
+    width: 300px;
+  }
+  .offer .offer__text h1 {
+    font-size: 60px;
+  }
+  .offer .offer__text p {
+    font-size: 30px;
+  }
+  .about {
+    margin-top: 214px;
+  }
+  .about .astronaut_image {
+    top: 437px;
+    width: 137px;
+    height: 150px;
+  }
+  .stack {
+    margin-top: -210px;
+  }
+  .stack p {
+    font-size: 26px;
+  }
+  footer #contacts p {
+    font-size: 26px;
+  }
+  footer #contacts a {
+    font-size: 22px;
+  }
+}
