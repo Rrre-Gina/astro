@@ -16,3 +16,13 @@ const contacts = document.querySelector('#contacts');
 btn_contact.onclick = () => {
     contacts.scrollIntoView( {behavior: "smooth"} );
 }
+
+//loader 
+
+window.onload = window.setTimeout(function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+}, 2000)

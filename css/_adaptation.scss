@@ -143,20 +143,30 @@
         width: 360px;
     }
 
+    .btn {
+        height: 50px;
+        width: 130px;
+    }
+
     .mars_image {
         width: 666px;
         height: 927px;
     }
 
     .offer {
+        margin-top: 100px;
         .offer__text {
             p {
                 margin: 45px 0 95px;
+            }
+            .btn {
+                width: 270px;
             }
         }
     }
 
     .about {
+        margin-top: 200px;
         p {
             font-size: 26px;
         }
@@ -222,7 +232,6 @@
     }
 
     .about {
-        margin-top: 214px;
         .astronaut_image {
             top: 437px;
             width: 137px;
