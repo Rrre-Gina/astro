@@ -213,6 +213,16 @@
             }
         }
     }
+
+    .preloader {
+        .loader_image {
+            width: 260px;
+            height: 456px;
+            background-image: url('../images/loader_image_mobile.png');
+            background-position: center;
+            background-size: cover;
+        }
+     }
 }
 
 @media (max-width:410px) {

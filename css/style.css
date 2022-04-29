@@ -253,6 +253,14 @@ footer #contacts .footer__row a {
           justify-content: center;
 }
 
+.preloader .loader_image {
+  width: 802px;
+  height: 222px;
+  background-image: url("../images/loader_image.png");
+  background-position: center;
+  background-size: cover;
+}
+
 .preloader .loading {
   width: 264px;
   height: 64px;
@@ -560,6 +568,13 @@ footer #contacts .footer__row a {
   }
   .stack .stack_description .line {
     width: 308px;
+  }
+  .preloader .loader_image {
+    width: 260px;
+    height: 456px;
+    background-image: url("../images/loader_image_mobile.png");
+    background-position: center;
+    background-size: cover;
   }
 }
 
