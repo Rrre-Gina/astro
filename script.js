@@ -19,10 +19,24 @@ btn_contact.onclick = () => {
 
 //loader 
 
-window.onload = window.setTimeout(function () {
+const header = document.querySelector('header');
+const loaded = () => {
+	return new Promise((resolve) => {
+  	    setTimeout(() => {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+            header.style.zIndex = 1;
+            resolve();
+        }, 500);
+	})
+};
+  
+window.onload = setTimeout(async function () {
     document.body.classList.add('loaded_hiding');
-    window.setTimeout(function () {
-      document.body.classList.add('loaded');
-      document.body.classList.remove('loaded_hiding');
-    }, 500);
+    let res = loaded();
+    await res;
 }, 2000)
+
+
+
+
