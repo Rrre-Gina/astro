@@ -25,7 +25,6 @@ const loaded = () => {
   	    setTimeout(() => {
             document.body.classList.add('loaded');
             document.body.classList.remove('loaded_hiding');
-            header.style.zIndex = 1;
             resolve();
         }, 500);
 	})

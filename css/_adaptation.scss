@@ -216,11 +216,7 @@
 
     .preloader {
         .loader_image {
-            width: 260px;
-            height: 456px;
-            background-image: url('../images/loader_image_mobile.png');
-            background-position: center;
-            background-size: cover;
+            display: none;
         }
      }
 }
@@ -263,6 +259,11 @@
             }
             a {
                 font-size: 22px;
+            }
+            .footer__row {
+                a {
+                    margin-right: 30px;
+                }
             }
         }
     }

@@ -28,10 +28,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 0 20px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  padding: 40px 0 16px;
 }
 
 .btn {
@@ -570,11 +567,7 @@ footer #contacts .footer__row a {
     width: 308px;
   }
   .preloader .loader_image {
-    width: 260px;
-    height: 456px;
-    background-image: url("../images/loader_image_mobile.png");
-    background-position: center;
-    background-size: cover;
+    display: none;
   }
 }
 
@@ -604,5 +597,8 @@ footer #contacts .footer__row a {
   }
   footer #contacts a {
     font-size: 22px;
+  }
+  footer #contacts .footer__row a {
+    margin-right: 30px;
   }
 }
